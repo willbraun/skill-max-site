@@ -1,11 +1,15 @@
+<script lang="ts">
+	import { APP_NAME } from '$lib/constants'
+</script>
+
 <svelte:head>
-	<title>Support | Skill Max</title>
+	<title>Support | {APP_NAME}</title>
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-4 py-16">
 	<h1 class="text-3xl font-bold tracking-tight">Support</h1>
 	<p class="mt-4 text-muted-foreground">
-		Need help with Skill Max? Find answers to common questions below, or reach out to us directly.
+		Need help with {APP_NAME}? Find answers to common questions below, or reach out to us directly.
 	</p>
 
 	<h2 class="mt-10 text-xl font-semibold">Frequently Asked Questions</h2>
@@ -34,15 +38,15 @@
 			<h3 class="font-medium">How does time tracking work?</h3>
 			<p class="mt-1 text-muted-foreground">
 				Start a timer for any category when you begin practicing, and stop it when you're done. You may track live
-				sessions or manually enter past sessions. Skill Max keeps a history of your sessions and uses it to recommend
-				what to work on next.
+				sessions or manually enter past sessions. {APP_NAME} keeps a history of your sessions and uses it to recommend what
+				to work on next.
 			</p>
 		</div>
 
 		<div>
 			<h3 class="font-medium">How are recommendations chosen?</h3>
 			<p class="mt-1 text-muted-foreground">
-				Skill Max looks at your tracked time across all categories and chooses the one that has the lowest percentage of
+				{APP_NAME} looks at your tracked time across all categories and chooses the one that has the lowest percentage of
 				your weekly goal completed. This helps you focus on the areas that need the most attention.
 			</p>
 		</div>

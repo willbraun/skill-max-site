@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/state'
+	import logo from '$lib/assets/favicons/apple-icon.png'
 	import { Button } from '$lib/components/ui/button'
 	import * as Sheet from '$lib/components/ui/sheet'
+	import { APP_NAME } from '$lib/constants'
 	import { cn } from '$lib/utils'
 	import MenuIcon from '@lucide/svelte/icons/menu'
 
 	const navLinks = [
-		{ href: '/', label: 'Home' },
 		{ href: '/support', label: 'Support' },
 		{ href: '/privacy-policy', label: 'Privacy Policy' },
 	]
@@ -16,7 +17,10 @@
 
 <header class="border-b bg-background">
 	<div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-		<a href="/" class="font-semibold">Skill Max</a>
+		<a href="/" class="text-lg font-semibold flex items-center">
+			<img src={logo} alt="{APP_NAME} logo" class="inline-block h-6 w-6 mr-2" />
+			<p>{APP_NAME}</p>
+		</a>
 
 		<nav class="hidden items-center gap-6 md:flex">
 			{#each navLinks as link (link.href)}
@@ -30,6 +34,15 @@
 					{link.label}
 				</a>
 			{/each}
+			<Button
+				href="#"
+				class="group relative overflow-hidden shadow-lg hover:shadow-success/20 transition-transform hover:scale-105 flex items-center gap-2 p-4"
+			>
+				<span
+					class="absolute inset-0 origin-left scale-x-0 bg-success transition-transform duration-500 ease-out group-hover:scale-x-100 rounded-full"
+				></span>
+				<p class="relative text-sm">Download {APP_NAME}</p>
+			</Button>
 		</nav>
 
 		<Sheet.Root bind:open>

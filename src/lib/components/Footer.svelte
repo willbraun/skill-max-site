@@ -2,7 +2,6 @@
 	import { Separator } from '$lib/components/ui/separator'
 
 	const navLinks = [
-		{ href: '/', label: 'Home' },
 		{ href: '/support', label: 'Support' },
 		{ href: '/privacy-policy', label: 'Privacy Policy' },
 	]

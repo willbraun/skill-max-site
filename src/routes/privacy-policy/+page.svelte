@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { APP_NAME } from '$lib/constants'
+</script>
+
 <svelte:head>
-	<title>Privacy Policy | Skill Max</title>
+	<title>Privacy Policy | {APP_NAME}</title>
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-4 py-16">
@@ -7,15 +11,14 @@
 	<p class="mt-2 text-sm text-muted-foreground">Last updated: July 26, 2026</p>
 
 	<p class="mt-6 text-muted-foreground">
-		This Privacy Policy explains what information Skill Max collects and how it is used. We built Skill Max to respect
-		your privacy and only collect the minimum information needed to understand how the app is used and improve it over
-		time.
+		This Privacy Policy explains what information {APP_NAME} collects and how it is used. We built {APP_NAME} to respect
+		your privacy and only collect the minimum information needed to understand how the app is used and improve it over time.
 	</p>
 
 	<h2 class="mt-10 text-xl font-semibold">Information We Collect</h2>
 
 	<p class="mt-2 text-muted-foreground">
-		Skill Max uses <a href="https://posthog.com" class="underline">PostHog</a>, a third-party analytics service, to
+		{APP_NAME} uses <a href="https://posthog.com" class="underline">PostHog</a>, a third-party analytics service, to
 		collect anonymous usage analytics. This may include information such as:
 	</p>
 	<ul class="mt-2 list-disc space-y-1 ml-6 text-muted-foreground">
@@ -30,7 +33,7 @@
 
 	<h2 class="mt-10 text-xl font-semibold">How We Use It</h2>
 	<p class="mt-2 text-muted-foreground">
-		We use this analytics data solely to understand how people use Skill Max, identify bugs, and determine which
+		We use this analytics data solely to understand how people use {APP_NAME}, identify bugs, and determine which
 		features to improve or build next. We do not sell your information, and we do not share it with third parties other
 		than PostHog, which processes it on our behalf.
 	</p>
