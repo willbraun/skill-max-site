@@ -83,7 +83,7 @@
 	--sidebar-ring: var(--brand-accent);
 
 	@media (prefers-color-scheme: dark) {
-		--surface-primary: hsl(0 0% 12%);
+		--surface-primary: hsl(0 0% 8%);
 		--surface-primary-raised: hsl(0 0% 16%);
 		--surface: hsl(0 0% 20%);
 		--surface-raised: hsl(0 0% 24%);

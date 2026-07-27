@@ -85,7 +85,8 @@
 
 	<h2 class="mt-10 text-xl font-semibold">Contact us</h2>
 	<p class="mt-2 text-muted-foreground">
-		Can't find what you're looking for, or run into a bug? Reach out at
+		Can't find what you're looking for, or run into a bug? Feel free to submit anonymous feedback via the Feedback form
+		in the app, reach out at
 		<a href="mailto:support@skillmaxapp.com" class="underline">support@skillmaxapp.com</a>
 		and we'll get back to you as soon as we can.
 	</p>

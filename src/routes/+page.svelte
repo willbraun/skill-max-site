@@ -1,5 +1,11 @@
 <script lang="ts">
-	import AppleLogo from '$lib/assets/images/apple-logo.svg'
+	import appleLogo from '$lib/assets/images/icons/apple-logo.svg'
+	import editCategoryScreenshot from '$lib/assets/images/screenshots/edit-category.png'
+	import historyScreenshot from '$lib/assets/images/screenshots/history.png'
+	import homeScreenshot from '$lib/assets/images/screenshots/home.png'
+	import liveActivityScreenshot from '$lib/assets/images/screenshots/live-activity.png'
+	import startScreenshot from '$lib/assets/images/screenshots/start.png'
+	import widgetsScreenshot from '$lib/assets/images/screenshots/widgets.png'
 	import { APP_NAME, APP_URL } from '$lib/constants'
 
 	type Screenshot = {
@@ -9,12 +15,30 @@
 
 	const screenshots: Screenshot[] = [
 		{
-			image: '/screenshot1.png',
-			feature: 'Feature 1',
+			image: editCategoryScreenshot,
+			feature: 'Customize Goals',
+		},
+		{
+			image: homeScreenshot,
+			feature: 'Get Recommendations',
+		},
+		{
+			image: startScreenshot,
+			feature: 'Log Practice Sessions',
+		},
+		{
+			image: liveActivityScreenshot,
+			feature: 'Monitor Your Session Easily',
+		},
+		{
+			image: widgetsScreenshot,
+			feature: 'Quick Access With Widgets',
+		},
+		{
+			image: historyScreenshot,
+			feature: 'View History',
 		},
 	]
-
-	// TODO - View Recommendations, Customize Goals, Track Time, Manage From Lock Screen, View History, Use Widgets
 </script>
 
 <svelte:head>
@@ -47,7 +71,7 @@
 	</li>
 {/snippet}
 
-<section class="relative mx-auto max-w-5xl px-4 py-16 text-center grid grid-cols-2 items-center">
+<section class="relative mx-auto max-w-5xl px-4 py-16 text-center grid sm:grid-cols-2 gap-16 sm:gap-2 items-center">
 	<div class="grow flex flex-col items-center justify-center gap-4">
 		<h1 class="text-6xl font-bold text-foreground">Know what to practice next</h1>
 		<p class="mt-4 max-w-xl text-lg text-muted-foreground">
@@ -62,7 +86,7 @@
 						class="absolute inset-0 origin-left scale-x-0 bg-success transition-transform duration-500 ease-out group-hover:scale-x-100 rounded-full"
 					></span>
 					<div class="relative flex mb-0.5 items-center aspect-square w-4 invert">
-						<img src={AppleLogo} alt="Apple logo" />
+						<img src={appleLogo} alt="Apple logo" />
 					</div>
 					<p class="relative text-lg">Download on iOS</p>
 				</button>
@@ -76,18 +100,25 @@
 			</ul>
 		</div>
 	</div>
-	<div class="flex aspect-9/16 items-center mx-auto justify-center rounded-2xl border bg-muted w-64">Screenshot</div>
+	<div class="flex items-center mx-auto overflow-hidden justify-center rounded-2xl border w-64 sm:w-72">
+		<img src={homeScreenshot} alt="Screenshot of the app" />
+	</div>
 </section>
 
 <section class="mx-auto max-w-5xl px-4 pb-16">
-	<h2 class="text-4xl font-bold">Your path to improvement</h2>
-	<div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+	<h2 class="text-4xl text-center sm:text-start font-bold mb-2">Your Path to Improvement</h2>
+	<p class="text-lg text-muted-foreground text-center sm:text-start">Everything you need to get better</p>
+	<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
 		{#each screenshots as screenshot, i}
-			<div>
-				<div class="flex aspect-9/16 mb-2 items-center justify-center rounded-lg border bg-muted">
-					<img src={screenshot.image} alt="Screenshot {i + 1}" />
+			<div class="flex flex-col items-center gap-2">
+				<div class="flex mb-2 w-64 mx-auto h-115 items-center justify-center rounded-2xl border overflow-hidden">
+					<img
+						src={screenshot.image}
+						alt={screenshot.feature}
+						class="w-full h-[calc(100%+40px)] object-cover object-top -translate-y-5"
+					/>
 				</div>
-				<p class="text-center text-sm text-muted-foreground">{screenshot.feature}</p>
+				<p class="text-center text-lg text-foreground">{screenshot.feature}</p>
 			</div>
 		{/each}
 	</div>
