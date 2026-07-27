@@ -66,12 +66,12 @@
 				No. However, you may delete and re-add a session if you need to make changes. Sessions added retroactively will
 				be counted toward your weekly goal for the week they are dated, not necessarily the current week.
 			</p>
-			<ul class="mt-1 ml-6 text-muted-foreground list-decimal">
+			<ol class="mt-1 ml-6 text-muted-foreground list-decimal">
 				<li>To delete a session, tap the session in the history list and select "Delete".</li>
 				<li>
 					To add a session, tap the category, select "Log a previous session", select the time, and tap "Log Session".
 				</li>
-			</ul>
+			</ol>
 		</div>
 
 		<div>
