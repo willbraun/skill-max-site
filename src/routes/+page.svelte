@@ -1,6 +1,6 @@
 <script lang="ts">
 	import AppleLogo from '$lib/assets/images/apple-logo.svg'
-	import { APP_NAME } from '$lib/constants'
+	import { APP_NAME, APP_URL } from '$lib/constants'
 
 	type Screenshot = {
 		image: string
@@ -54,17 +54,19 @@
 			Organize your goals, track your practice time, and get personalized recommendations to keep improving
 		</p>
 		<div class="mt-8 flex justify-center">
-			<button
-				class="group relative overflow-hidden shadow-lg hover:shadow-success/20 transition-transform hover:scale-105 flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-lg font-semibold text-primary-foreground cursor-pointer"
-			>
-				<span
-					class="absolute inset-0 origin-left scale-x-0 bg-success transition-transform duration-500 ease-out group-hover:scale-x-100 rounded-full"
-				></span>
-				<div class="relative flex mb-0.5 items-center aspect-square w-4 invert">
-					<img src={AppleLogo} alt="Apple logo" />
-				</div>
-				<p class="relative text-lg">Download on iOS</p>
-			</button>
+			<a href={APP_URL} target="_blank" rel="noopener noreferrer">
+				<button
+					class="group relative overflow-hidden shadow-lg hover:shadow-success/20 transition-transform hover:scale-105 flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-lg font-semibold text-primary-foreground cursor-pointer"
+				>
+					<span
+						class="absolute inset-0 origin-left scale-x-0 bg-success transition-transform duration-500 ease-out group-hover:scale-x-100 rounded-full"
+					></span>
+					<div class="relative flex mb-0.5 items-center aspect-square w-4 invert">
+						<img src={AppleLogo} alt="Apple logo" />
+					</div>
+					<p class="relative text-lg">Download on iOS</p>
+				</button>
+			</a>
 		</div>
 		<div class="text-sm text-start text-muted-foreground">
 			<ul>

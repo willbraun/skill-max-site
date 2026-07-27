@@ -3,7 +3,7 @@
 	import logo from '$lib/assets/favicons/apple-icon.png'
 	import { Button } from '$lib/components/ui/button'
 	import * as Sheet from '$lib/components/ui/sheet'
-	import { APP_NAME } from '$lib/constants'
+	import { APP_NAME, APP_URL } from '$lib/constants'
 	import { cn } from '$lib/utils'
 	import MenuIcon from '@lucide/svelte/icons/menu'
 
@@ -35,7 +35,7 @@
 				</a>
 			{/each}
 			<Button
-				href="#"
+				href={APP_URL}
 				class="group relative overflow-hidden shadow-lg hover:shadow-success/20 transition-transform hover:scale-105 flex items-center gap-2 p-4"
 			>
 				<span
