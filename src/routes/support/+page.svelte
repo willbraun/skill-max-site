@@ -8,14 +8,7 @@
 		Need help with Skill Max? Find answers to common questions below, or reach out to us directly.
 	</p>
 
-	<h2 class="mt-10 text-xl font-semibold">Getting started</h2>
-	<p class="mt-2 text-muted-foreground">
-		Skill Max helps you track and improve the skills that matter to you. Add a skill, break it down into categories, and
-		log time as you practice. Skill Max uses your history to recommend what to work on next, so you always know where to
-		focus.
-	</p>
-
-	<h2 class="mt-10 text-xl font-semibold">Frequently asked questions</h2>
+	<h2 class="mt-10 text-xl font-semibold">Frequently Asked Questions</h2>
 
 	<div class="mt-4 space-y-6">
 		<div>
