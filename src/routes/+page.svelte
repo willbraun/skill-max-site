@@ -110,7 +110,7 @@
 		</div>
 	</div>
 	<div
-		class="flex items-center mx-auto overflow-hidden justify-center rounded-[32px] sm:rounded-[36px] border w-64 sm:w-72"
+		class="flex items-center mx-auto overflow-hidden justify-center rounded-[28px] sm:rounded-[36px] border w-64 sm:w-72"
 	>
 		<img src={homeScreenshot} alt="Screenshot of the app" />
 	</div>
@@ -122,11 +122,11 @@
 	<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
 		{#each screenshots as screenshot, i}
 			<div class="flex flex-col items-center gap-2">
-				<div class="flex mb-2 w-64 mx-auto h-115 items-center justify-center rounded-[32px] border overflow-hidden">
+				<div class="flex mb-2 w-64 mx-auto h-112 items-center justify-center rounded-[28px] border overflow-hidden">
 					<img
 						src={screenshot.image}
 						alt={screenshot.feature}
-						class="w-full h-[calc(100%+40px)] object-cover object-top -translate-y-5"
+						class={`w-full h-[calc(100%+60px)] object-cover object-top ${i === 0 ? '' : '-translate-y-2'}`}
 					/>
 				</div>
 				<p class="text-center text-lg text-foreground">{screenshot.feature}</p>
