@@ -16,7 +16,7 @@
 	const screenshots: Screenshot[] = [
 		{
 			image: editCategoryScreenshot,
-			feature: 'Customize Goals',
+			feature: 'Set Goals for Any Skill',
 		},
 		{
 			image: homeScreenshot,
@@ -28,11 +28,11 @@
 		},
 		{
 			image: liveActivityScreenshot,
-			feature: 'Monitor Your Session Easily',
+			feature: 'Monitor Your Sessions Easily',
 		},
 		{
 			image: widgetsScreenshot,
-			feature: 'Quick Access With Widgets',
+			feature: 'Prepare With Widgets',
 		},
 		{
 			image: historyScreenshot,
@@ -100,18 +100,20 @@
 			</ul>
 		</div>
 	</div>
-	<div class="flex items-center mx-auto overflow-hidden justify-center rounded-2xl border w-64 sm:w-72">
+	<div
+		class="flex items-center mx-auto overflow-hidden justify-center rounded-[32px] sm:rounded-[36px] border w-64 sm:w-72"
+	>
 		<img src={homeScreenshot} alt="Screenshot of the app" />
 	</div>
 </section>
 
-<section class="mx-auto max-w-5xl px-4 pb-16">
+<section class="mx-auto max-w-5xl px-4 py-16">
 	<h2 class="text-4xl text-center sm:text-start font-bold mb-2">Your Path to Improvement</h2>
 	<p class="text-lg text-muted-foreground text-center sm:text-start">Everything you need to get better</p>
 	<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
 		{#each screenshots as screenshot, i}
 			<div class="flex flex-col items-center gap-2">
-				<div class="flex mb-2 w-64 mx-auto h-115 items-center justify-center rounded-2xl border overflow-hidden">
+				<div class="flex mb-2 w-64 mx-auto h-115 items-center justify-center rounded-[32px] border overflow-hidden">
 					<img
 						src={screenshot.image}
 						alt={screenshot.feature}
@@ -122,4 +124,13 @@
 			</div>
 		{/each}
 	</div>
+</section>
+
+<section class="mx-auto max-w-5xl px-4 pt-16 md:pb-32 pb-16">
+	<h2 class="text-4xl text-center sm:text-start font-bold mb-2">Why I Built Skill Max</h2>
+	<p class="text-lg text-muted-foreground text-center sm:text-start">
+		I originally built Skill Max for myself as a chess improvement tool. My goal was to eliminate the decision fatigue
+		of figuring out what to practice next. As I used it, I realized the same approach could help with learning any
+		skill, from music to coding to languages. I've already found it helpful, and I hope you will too.
+	</p>
 </section>

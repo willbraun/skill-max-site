@@ -8,7 +8,7 @@
 
 <section class="mx-auto max-w-3xl px-4 py-16">
 	<h1 class="text-3xl font-bold tracking-tight">Privacy Policy</h1>
-	<p class="mt-2 text-sm text-muted-foreground">Last updated: July 26, 2026</p>
+	<p class="mt-2 text-sm text-muted-foreground">Last updated: July 28, 2026</p>
 
 	<p class="mt-6 text-muted-foreground">
 		This Privacy Policy explains what information {APP_NAME} collects and how it is used. We built {APP_NAME} to respect
@@ -27,8 +27,8 @@
 		<li>A randomly generated identifier used to recognize repeat usage, which is not tied to your name or email</li>
 	</ul>
 	<p class="mt-2 text-muted-foreground">
-		We do not collect your name, email address, or any personally identifiable data. We do not use any of the skill,
-		category, or time-tracking data you create in the app for advertising or marketing purposes.
+		We do not collect your name, email address, or any personally identifiable data. We do not use any of the data you
+		create in the app for advertising or marketing purposes.
 	</p>
 
 	<h2 class="mt-10 text-xl font-semibold">How We Use It</h2>

@@ -33,19 +33,19 @@
 	font-display: swap;
 }
 :root {
-	/* App tokens (from mobile app globals.css) */
-	--surface-primary: hsl(40 25% 96%);
-	--surface-primary-raised: hsl(40 30% 98%);
-	--surface: hsl(40 8% 92%);
-	--surface-raised: hsl(40 20% 96%);
-	--surface-secondary: hsl(40 5% 89%);
-	--line-border: hsl(40 12% 84%);
+	/* App tokens (mostly from mobile app globals.css) - dark mode only */
+	--surface-primary: hsl(0 0% 8%);
+	--surface-primary-raised: hsl(0 0% 16%);
+	--surface: hsl(0 0% 20%);
+	--surface-raised: hsl(0 0% 24%);
+	--surface-secondary: hsl(0 0% 22%);
+	--line-border: hsl(0 0% 30%);
 	--brand-accent: hsl(209 59% 50%);
 	--brand-accent-subtle: hsl(209 100% 29%);
-	--state-error: hsl(0 84% 58%);
-	--text-primary: hsl(30 8% 12%);
-	--text-secondary: hsl(30 5% 34%);
-	--text-muted: hsl(30 3% 50%);
+	--state-error: hsl(0 84% 60%);
+	--text-primary: hsl(0 0% 92%);
+	--text-secondary: hsl(0 0% 65%);
+	--text-muted: hsl(0 0% 65%);
 	--text-accent: hsl(0 0% 100%);
 	--success: hsl(142 71% 42%);
 
@@ -81,22 +81,6 @@
 	--sidebar-accent-foreground: var(--text-primary);
 	--sidebar-border: var(--line-border);
 	--sidebar-ring: var(--brand-accent);
-
-	@media (prefers-color-scheme: dark) {
-		--surface-primary: hsl(0 0% 8%);
-		--surface-primary-raised: hsl(0 0% 16%);
-		--surface: hsl(0 0% 20%);
-		--surface-raised: hsl(0 0% 24%);
-		--surface-secondary: hsl(0 0% 22%);
-		--line-border: hsl(0 0% 30%);
-		--brand-accent: hsl(209 59% 50%);
-		--brand-accent-subtle: hsl(209 100% 29%);
-		--state-error: hsl(0 84% 60%);
-		--text-primary: hsl(0 0% 92%);
-		--text-secondary: hsl(0 0% 65%);
-		--text-muted: hsl(0 0% 60%);
-		--text-accent: hsl(0 0% 100%);
-	}
 }
 
 @theme inline {

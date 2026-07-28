@@ -16,6 +16,14 @@
 
 	<div class="mt-4 space-y-6">
 		<div>
+			<h3 class="font-medium">What skills can I add?</h3>
+			<p class="mt-1 text-muted-foreground">
+				Anything! {APP_NAME} is designed to work with any skill, including music, languages, sports, games, and more. You
+				can add as many skills as you want.
+			</p>
+		</div>
+
+		<div>
 			<h3 class="font-medium">How do I add a skill?</h3>
 			<p class="mt-1 text-muted-foreground">
 				The first time you load the app, you'll see an "Add Skill" button. Tap it to create your first skill. You must
@@ -27,10 +35,10 @@
 		</div>
 
 		<div>
-			<h3 class="font-medium">What are categories used for?</h3>
+			<h3 class="font-medium">What are categories?</h3>
 			<p class="mt-1 text-muted-foreground">
 				Categories let you split a skill into the individual areas you want to improve. For example, a "Guitar" skill
-				might have categories like "Chords," "Scales," and "Songs." Time is tracked separately for each category.
+				might have categories like "Chords", "Scales", and "Songs". Time is tracked separately for each category.
 			</p>
 		</div>
 
@@ -81,13 +89,21 @@
 				be lost.
 			</p>
 		</div>
+
+		<div>
+			<h3 class="font-medium">Is this available for Android?</h3>
+			<p class="mt-1 text-muted-foreground">
+				Not yet. {APP_NAME} is currently only available for iOS devices. I may release an Android version in the future,
+				but I don't have a timeline for that yet.
+			</p>
+		</div>
 	</div>
 
 	<h2 class="mt-10 text-xl font-semibold">Contact us</h2>
 	<p class="mt-2 text-muted-foreground">
 		Can't find what you're looking for, or run into a bug? Feel free to submit anonymous feedback via the Feedback form
-		in the app, reach out at
+		on the Settings page of the app, or reach out at
 		<a href="mailto:support@skillmaxapp.com" class="underline">support@skillmaxapp.com</a>
-		and we'll get back to you as soon as we can.
+		and I'll get back to you as soon as I can.
 	</p>
 </section>
