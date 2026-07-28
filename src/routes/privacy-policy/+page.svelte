@@ -1,9 +1,17 @@
 <script lang="ts">
-	import { APP_NAME } from '$lib/constants'
+	import { APP_NAME, SITE_URL } from '$lib/constants'
+
+	const description = `Privacy Policy for ${APP_NAME}, explaining what information is collected and how it is used.`
 </script>
 
 <svelte:head>
 	<title>Privacy Policy | {APP_NAME}</title>
+	<meta name="description" content={description} />
+	<link rel="canonical" href="{SITE_URL}/privacy-policy" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Privacy Policy | {APP_NAME}" />
+	<meta property="og:description" content={description} />
+	<meta property="og:url" content="{SITE_URL}/privacy-policy" />
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-4 py-16">

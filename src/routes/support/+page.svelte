@@ -1,9 +1,17 @@
 <script lang="ts">
-	import { APP_NAME } from '$lib/constants'
+	import { APP_NAME, SITE_URL } from '$lib/constants'
+
+	const description = `Find answers to common questions about ${APP_NAME}, or get in touch with support.`
 </script>
 
 <svelte:head>
 	<title>Support | {APP_NAME}</title>
+	<meta name="description" content={description} />
+	<link rel="canonical" href="{SITE_URL}/support" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Support | {APP_NAME}" />
+	<meta property="og:description" content={description} />
+	<meta property="og:url" content="{SITE_URL}/support" />
 </svelte:head>
 
 <section class="mx-auto max-w-3xl px-4 py-16">

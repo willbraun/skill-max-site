@@ -6,7 +6,7 @@
 	import liveActivityScreenshot from '$lib/assets/images/screenshots/live-activity.png'
 	import startScreenshot from '$lib/assets/images/screenshots/start.png'
 	import widgetsScreenshot from '$lib/assets/images/screenshots/widgets.png'
-	import { APP_NAME, APP_URL } from '$lib/constants'
+	import { APP_DESCRIPTION, APP_NAME, APP_URL, SITE_URL } from '$lib/constants'
 
 	type Screenshot = {
 		image: string
@@ -43,6 +43,15 @@
 
 <svelte:head>
 	<title>{APP_NAME}</title>
+	<meta name="description" content={APP_DESCRIPTION} />
+	<link rel="canonical" href={SITE_URL} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={APP_NAME} />
+	<meta property="og:description" content={APP_DESCRIPTION} />
+	<meta property="og:url" content={SITE_URL} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={APP_NAME} />
+	<meta name="twitter:description" content={APP_DESCRIPTION} />
 </svelte:head>
 
 {#snippet listItem(name: string)}
